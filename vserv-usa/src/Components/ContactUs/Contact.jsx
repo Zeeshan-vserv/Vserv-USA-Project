@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from "react";
-import Select from "react-select";
-import countryList from "react-select-country-list";
+import React, { useState, useMemo } from 'react'
+import Select from 'react-select'
+import countryList from 'react-select-country-list'
+import contactus from '../../images/contactus.jpg'
 
 const contact = () => {
   function CountrySelector() {
@@ -23,11 +24,12 @@ const contact = () => {
   }
 
   return (
-    <div className="pt-16">
-      <div className="font-medium text-3xl items-center text-center">
-        <p>Every day, VSERV leverages AI-infused technologies</p>
-        <p>to empower clients around the globe to build</p>
-        <p>a more resilient, secure and sustainable future.</p>
+    <div>
+      {/* <img className='w-full h-150' src={contactus} alt="" /> */}
+      <div className='font-medium text-3xl items-center text-center p-3 m-2'>
+        <p>Let’s build the future together!</p>
+        <p> Reach out to us </p>
+         <p> for custom IT solutions, consultation, or partnership opportunities.</p>
       </div>
       <div className="text-4xl font-medium items-center text-center p-10">
         <h1>How can we help you?</h1>
