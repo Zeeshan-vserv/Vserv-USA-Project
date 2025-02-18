@@ -13,7 +13,7 @@ const contact = () => {
 
     return (
       <Select
-        className="w-139.5 border-none "
+        className="w-139.5 border-none"
         placeholder="Country"
         options={options}
         value={value}

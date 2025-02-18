@@ -10,7 +10,7 @@ import { AiFillBank } from "react-icons/ai";
 const home = () => {
   const [playVid, setPlayVid] = useState(false);
   return (
-    <div>
+    <div className="max-w-screen overflow-x-hidden">
       <Nav />
 
       {/* Home Case Study Section */}
