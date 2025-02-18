@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import Nav from "../Navbar/Nav";
+import Contact from "../ContactUs/Contact";
+import Footer from "../Footer/Footer";
 import { FaCirclePlay } from "react-icons/fa6";
+import VideoPopup from "./VideoPopup";
+import HomeVideo from "../../assets/home-vid-1.mp4";
+import { AiFillBank } from "react-icons/ai";
 
 const home = () => {
+  const [playVid, setPlayVid] = useState(false);
   return (
     <div>
+      <Nav />
+
       {/* Home Case Study Section */}
+      <div className={`absolute z-50 ${!playVid ? "hidden" : ""}`}>
+        <VideoPopup HomeVideo={HomeVideo} setPlayVid={setPlayVid} />
+      </div>
       <section>
         <div className="w-full bg-[#111111] flex text-white p-20">
           <div className="w-[50%] flex flex-col gap-5">
@@ -27,7 +39,10 @@ const home = () => {
                 alt=""
               />
               <span className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <FaCirclePlay className="text-6xl text-[#2B0060] bg-white rounded-full cursor-pointer" />
+                <FaCirclePlay
+                  className="text-6xl text-[#2B0060] bg-white rounded-full cursor-pointer"
+                  onClick={() => setPlayVid(true)}
+                />
               </span>
             </div>
           </div>
@@ -232,12 +247,61 @@ const home = () => {
       </section>
 
       {/* Home Sixth Section */}
-      {/* <section>
-        <div className="w-full flex flex-col items-center py-10">
+      <section>
+        <div className="w-full flex flex-col gap-10 items-center py-10">
           <h2 className=" text-4xl">Consulting Services</h2>
-          <div></div>
+          <div className="flex flex-wrap gap-14 justify-center w-full">
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+            <div className="card w-[18%] h-[18vw] flex flex-col items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
+              <AiFillBank className="text-5xl text-[#61AFC4]" />
+              <h3 className="text-4xl text-[#1B0056] font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+                Banking
+              </h3>
+            </div>
+          </div>
         </div>
-      </section> */}
+      </section>
 
       {/*Home Content Hover Section */}
       <section>
@@ -260,7 +324,7 @@ const home = () => {
             </div>
           </div>
           <div className="group relative bg-[url('https://plus.unsplash.com/premium_photo-1661288439917-1542b58a962b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover md:w-[50%] w-full h-[500px] flex flex-col gap-4 items-center justify-center text-white">
-            <div className="absolute inset-0 bg-black/50"></div>{" "}
+            <div className="absolute inset-0 bg-yellow-900/20"></div>
             {/* Dark Overlay */}
             <h2 className="text-5xl font-bold text-center mt-32 w-[60%] relative z-10 group-hover:mt-0 duration-700">
               Custoer Success Stories
@@ -278,6 +342,9 @@ const home = () => {
           </div>
         </div>
       </section>
+
+      <Contact />
+      <Footer />
     </div>
   );
 };
