@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import Select from 'react-select'
 import countryList from 'react-select-country-list'
+import contactus from '../../images/contactus.jpg'
 
 const contact = () => {
 
@@ -17,7 +18,8 @@ const contact = () => {
 
   return (
     <div>
-      <div className='font-medium text-3xl items-center text-center'>
+      <img className='w-full h-150' src={contactus} alt="" />
+      <div className='font-medium text-3xl items-center text-center p-3 m-2'>
         <p>Every day, VSERV leverages AI-infused technologies</p>
         <p>to empower clients around the globe to build</p>
         <p>a more resilient, secure and sustainable future.</p>

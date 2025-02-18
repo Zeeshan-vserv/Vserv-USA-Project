@@ -9,14 +9,11 @@ const home = () => {
         <div className="w-full bg-[#111111] flex text-white p-20">
           <div className="w-[50%] flex flex-col gap-5">
             <h2 className="text-5xl font-semibold w-[70%]">
-              Case Study: Rank Group partners with Wipro for real time customer
-              insights<span className="text-8xl text-red-500 leading-0">.</span>
+            Vserv Infosystems Wins CIO Choice Award 2025 for Excellence in IT Solutions
+            <span className="text-8xl text-red-500 leading-0">.</span>
             </h2>
             <p className="w-[55%]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-              neque ad soluta, quisquam velit reiciendis numquam deleniti odit
-              labore, ipsum accusamus tenetur asperiores ullam a accusantium
-              fugiat sed minus ratione?
+            Vserv Infosystem, a leader in IT solutions and digital transformation, has been recognized with the prestigious CIO Choice Award 2025 for delivering cutting-edge technology solutions that drive business success. This recognition underscores our commitment to empowering organizations with real-time customer insights, advanced analytics, and AI-driven decision-making.
             </p>
           </div>
           <div className="w-[50%] ">
@@ -36,16 +33,10 @@ const home = () => {
 
       {/* Home second Section */}
       <section className="bg-[#362358] w-full px-10 pt-7 pb-4">
-        <p className="text-white text-2xl text-center font-semibold">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea modi
-          explicabo accusantium aliquid, suscipit facilis possimus maiores
-          consectetur qui quis, temporibus ullam accusamus laborum magnam,
-          dolorum perferendis in dignissimos reiciendis laboriosam voluptatem
-          quidem sint harum. Quod expedita assumenda voluptates, harum id nisi
-          quis blanditiis itaque error minus asperiores. Tempore maxime delectus
-          recusandae incidunt sit id repellendus, consectetur expedita animi
-          voluptates nisi accusamus harum aperiam!
+        <p className="text-white text-xl text-center font-semibold">
+        At Vserv Infosystems INC, we specialize in delivering top-tier IT solutions that empower businesses to achieve digital excellence. With expertise in software development, cybersecurity, managed services, and artificial intelligence, we provide cutting-edge solutions tailored to your business needs.
         </p>
+        <p className="text-white text-xl text-center font-semibold">With a team of highly skilled professionals, we focus on scalability, innovation, and efficiency, ensuring that your organization stays ahead in today’s competitive digital landscape</p>
       </section>
 
       {/* Home Third Section */}
