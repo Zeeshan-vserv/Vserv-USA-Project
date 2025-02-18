@@ -13,6 +13,7 @@ import { LuRadioTower } from "react-icons/lu";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
 import cio from '../../images/cio.webp'
 import ai from '../../images/ai.jpg'
+import software from '../../images/software.jpg'
 
 const home = () => {
   const [playVid, setPlayVid] = useState(false);
@@ -64,16 +65,16 @@ const home = () => {
         {/*Third Section First Container */}
         <div className="flex w-screen bg-[#F1EEF0]">
           <div className="w-[50%] flex flex-col gap-4 justify-center pl-32 pr-28 text-[#341C55]">
-            <h2 className="text-5xl leading-14 cursor-pointer duration-500 ease-in-out hover:underline"> <a href="https://vservit.com/you-have-a-great-business-idea-2/" target="_blank">
-            How to Choose the Right Storage Solutions for Your Business Needs?</a>
+            <h2 className="text-5xl leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+            How to Choose the Right Software Services for Your Business Needs?
             </h2>
             <p className="text-sm">
-            In today’s data-driven world, businesses generate and rely on vast amounts of information. Choosing the right storage solution is critical to ensure data is secure, accessible, and scalable. At Vservit, we empower businesses with cutting-edge storage solutions tailored to meet their unique needs. Here’s a guide to help you make the right choice for your business.
+            In today’s technology-driven world, businesses rely on robust software solutions to streamline operations, enhance productivity, and drive growth. Choosing the right software services is critical to ensure seamless integration, scalability, and efficiency. At Vservit, we empower businesses with cutting-edge software solutions tailored to meet their unique needs. Here’s a guide to help you make the right choice for your business.
             </p>
           </div>
           <div className="w-[50%]">
             <img
-              src="https://vservit.com/wp-content/uploads/2019/11/pexels-brett-sayles-2881228-2048x1363.jpg"
+              src={software}
               alt=""
             />
           </div>
@@ -90,10 +91,10 @@ const home = () => {
           </div>
           <div className="w-[50%] flex flex-col gap-4 justify-center pl-32 pr-28 text-[#341C55]">
             <h2 className="text-5xl leading-14 cursor-pointer duration-500 ease-in-out hover:underline"><a href="https://vservit.com/vservit-wins-the-cio-choice-2025-it-service-vendor-award-a-testament-to-excellence-and-innovation/" target="_blank">
-             VservIT Wins the CIO Choice 2025 IT Service Vendor Award</a>
+             VSERV Infosystems Wins the CIO Choice 2025 IT Service Vendor Award</a>
             </h2>
             <p className="text-sm">
-            At VservIT, we are proud to announce that we have been recognized as the CIO Choice 2025 IT Service Vendor. This prestigious accolade is a remarkable achievement, underscoring our commitment to delivering top-tier IT services and solutions that empower businesses across various industries to achieve their digital transformation goals.
+            At VSERV Infosystems, we are proud to announce that we have been recognized as the CIO Choice 2025 IT Service Vendor. This prestigious accolade is a remarkable achievement, underscoring our commitment to delivering top-tier IT services and solutions that empower businesses across various industries to achieve their digital transformation goals.
             </p>
           </div>
         </div>
@@ -101,11 +102,11 @@ const home = () => {
         {/*Third Section Third Container */}
         <div className="flex w-screen bg-[#F1EEF0]">
           <div className="w-[50%] flex flex-col gap-4 justify-center pl-32 pr-28 text-[#341C55]">
-            <h2 className="text-5xl leading-14 cursor-pointer duration-500 ease-in-out hover:underline"><a href="https://vservit.com/plan-your-project-with-your-software/" target="_blank">
-            Why Scalable Networking is the Backbone of Modern Businesses</a>
+            <h2 className="text-5xl leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
+            Why Scalable Software Solutions are the Backbone of Modern Businesses
             </h2>
             <p className="text-sm">
-            In the ever-evolving business world, adaptability and efficiency are the keys to success. Scalable networking solutions have emerged as the cornerstone for modern enterprises, enabling them to stay ahead of the curve. At Vservit, we understand how crucial a robust, scalable network is for fostering innovation and driving business growth.
+            In the ever-evolving business world, adaptability and efficiency are the keys to success. Scalable software solutions have emerged as the cornerstone for modern enterprises, enabling them to stay ahead of the curve. At Vserv IT, we understand how crucial a robust, scalable software infrastructure is for fostering innovation and driving business growth.
             </p>
           </div>
           <div className="w-[50%]">
@@ -147,25 +148,25 @@ const home = () => {
         <div className="w-full flex flex-wrap bg-[#7470A6] text-white">
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-4xl font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
-              Ahead of The Curve: 2025 Innovation Imperatives for Airports
+            Your Partner in Comprehensive Cybersecurity Solutions
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://plus.unsplash.com/premium_photo-1664368832311-7fe635e32c7c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://vservit.com/wp-content/uploads/2024/11/Cyber-Security.jpg"
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-4xl font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
-              Ahead of The Curve: 2025 Innovation Priorities for Automotive
+            Comprehensive IT Infrastructure Management for Modern Businesses
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://vservit.com/wp-content/uploads/2024/11/Infrastructure-Managed-Services.jpg"
               alt=""
             />
           </div>
@@ -173,50 +174,49 @@ const home = () => {
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://vservit.com/wp-content/uploads/2024/11/Cloud-Solutions.jpg"
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-4xl font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
-              Ahead of The Curve: 2025 Innovation Priorities for Banking
+            Empowering Businesses with Cloud and AI
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://plus.unsplash.com/premium_photo-1663047091392-425566f3ea56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://vservit.com/wp-content/uploads/2024/10/fms1.jpg"
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-4xl font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
-              Ahead of The Curve: 2025 Innovation Priorities for Capital Markets
+            Comprehensive Facility Management Services for a Seamless Business Environment
             </h3>
           </div>
 
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-4xl font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
-              Ahead of The Curve: 2025 Innovation Imperatives for Consumer
-              Packaged Goods
+            Artificial Intelligence and Machine Learning Services
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://plus.unsplash.com/premium_photo-1681823312184-72a6d501a5d6?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://vservit.com/wp-content/uploads/2024/11/ML-Solutions.jpg"
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-4xl font-semibold leading-14 cursor-pointer duration-500 ease-in-out hover:underline">
-              Ahead of The Curve: 2025 Innovation Imperatives for EC&O
+              Empowering Businesses with People-First Workforce Solutions
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://plus.unsplash.com/premium_photo-1681823471393-39a9b19ab0c8?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://vservit.com/wp-content/uploads/2024/11/Staffing-Solutions.jpg"
               alt=""
             />
           </div>
@@ -288,34 +288,36 @@ const home = () => {
             <div className="absolute inset-0 bg-black/50"></div>{" "}
             {/* Dark Overlay */}
             <h2 className="text-5xl font-bold text-center mt-32 w-[60%] relative z-10 group-hover:mt-0 duration-700">
-              Welcome To The Software-Driven ERA
-              <span className="text-8xl text-orange-500 leading-0">.</span>
+              Technologies We Specialize In
             </h2>
             <div className="w-[80%] flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 relative z-10">
-              <p className="text-2xl text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                asperiores, aliquamur quasi.
-              </p>
-              <button className="bg-white text-[#1B1B1B] w-[130px] text-sm py-2.5 px-6 rounded-full cursor-pointer hover:underline">
-                Read More
-              </button>
+            <ul>
+                <li>✅ Emerging Technologies</li>
+                <li>✅ Web & Mobile Application Development</li>
+                <li>✅ Big Data & Cloud Solutions</li>
+                <li>✅ Content Management Systems (CMS)</li>
+                <li>✅ Cloud Computing & DevOps</li>
+              </ul>
             </div>
           </div>
           <div className="group relative bg-[url('https://plus.unsplash.com/premium_photo-1661288439917-1542b58a962b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover md:w-[50%] w-full h-[500px] flex flex-col gap-4 items-center justify-center text-white">
             <div className="absolute inset-0 bg-yellow-900/20"></div>
             {/* Dark Overlay */}
             <h2 className="text-5xl font-bold text-center mt-32 w-[60%] relative z-10 group-hover:mt-0 duration-700">
-              Custoer Success Stories
+            Our Expertise
               <span className="text-8xl text-black leading-0">.</span>
             </h2>
             <div className="w-[80%] flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 relative z-10">
               <p className="text-2xl text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                asperiores, aliquamur quasi.
+              Partner with Vserv Infosystems INC to unlock tailored, scalable, and innovative solutions that drive efficiency and digital transformation for your business.
               </p>
-              <button className="bg-white text-[#1B1B1B] w-[130px] text-sm py-2.5 px-6 rounded-full cursor-pointer hover:underline">
-                Read More
-              </button>
+              <h1>Why Choose Us?</h1>
+              <ul>
+                <li>✅ Proven Expertise – Years of experience in delivering enterprise IT solutions</li>
+                <li>✅ Scalable & Secure Solutions – Built for performance, reliability, and security</li>
+                <li>✅ Client-Centric Approach – Custom solutions that align with business goals</li>
+                <li>✅ 24/7 Support – Ensuring seamless operations with round-the-clock assistance</li>
+              </ul>
             </div>
           </div>
         </div>
