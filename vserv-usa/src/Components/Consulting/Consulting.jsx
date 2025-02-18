@@ -1,39 +1,8 @@
 import React from "react";
-import { FaCirclePlay } from "react-icons/fa6";
 
-const home = () => {
+const Consulting = () => {
   return (
     <div>
-      {/* Home Case Study Section */}
-      <section>
-        <div className="w-full bg-[#111111] flex text-white p-20">
-          <div className="w-[50%] flex flex-col gap-5">
-            <h2 className="text-5xl font-semibold w-[70%]">
-              Case Study: Rank Group partners with Wipro for real time customer
-              insights<span className="text-8xl text-red-500 leading-0">.</span>
-            </h2>
-            <p className="w-[55%]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-              neque ad soluta, quisquam velit reiciendis numquam deleniti odit
-              labore, ipsum accusamus tenetur asperiores ullam a accusantium
-              fugiat sed minus ratione?
-            </p>
-          </div>
-          <div className="w-[50%] ">
-            <div className="h-[400px] w-[600px] m-auto relative">
-              <img
-                className="h-full w-full"
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-              <span className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <FaCirclePlay className="text-6xl text-[#2B0060] bg-white rounded-full cursor-pointer" />
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Home second Section */}
       <section className="bg-[#362358] w-full px-10 pt-7 pb-4">
         <p className="text-white text-2xl text-center font-semibold">
@@ -232,54 +201,14 @@ const home = () => {
       </section>
 
       {/* Home Sixth Section */}
-      {/* <section>
+      <section>
         <div className="w-full flex flex-col items-center py-10">
           <h2 className=" text-4xl">Consulting Services</h2>
           <div></div>
-        </div>
-      </section> */}
-
-      {/*Home Content Hover Section */}
-      <section>
-        <div className="flex flex-col md:flex-row">
-          <div className="group relative bg-[url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover md:w-[50%] w-full h-[500px] flex flex-col gap-4 items-center justify-center text-white">
-            <div className="absolute inset-0 bg-black/50"></div>{" "}
-            {/* Dark Overlay */}
-            <h2 className="text-5xl font-bold text-center mt-32 w-[60%] relative z-10 group-hover:mt-0 duration-700">
-              Welcome To The Software-Driven ERA
-              <span className="text-8xl text-orange-500 leading-0">.</span>
-            </h2>
-            <div className="w-[80%] flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 relative z-10">
-              <p className="text-2xl text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                asperiores, aliquamur quasi.
-              </p>
-              <button className="bg-white text-[#1B1B1B] w-[130px] text-sm py-2.5 px-6 rounded-full cursor-pointer hover:underline">
-                Read More
-              </button>
-            </div>
-          </div>
-          <div className="group relative bg-[url('https://plus.unsplash.com/premium_photo-1661288439917-1542b58a962b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover md:w-[50%] w-full h-[500px] flex flex-col gap-4 items-center justify-center text-white">
-            <div className="absolute inset-0 bg-black/50"></div>{" "}
-            {/* Dark Overlay */}
-            <h2 className="text-5xl font-bold text-center mt-32 w-[60%] relative z-10 group-hover:mt-0 duration-700">
-              Custoer Success Stories
-              <span className="text-8xl text-black leading-0">.</span>
-            </h2>
-            <div className="w-[80%] flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 relative z-10">
-              <p className="text-2xl text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                asperiores, aliquamur quasi.
-              </p>
-              <button className="bg-white text-[#1B1B1B] w-[130px] text-sm py-2.5 px-6 rounded-full cursor-pointer hover:underline">
-                Read More
-              </button>
-            </div>
-          </div>
         </div>
       </section>
     </div>
   );
 };
 
-export default home;
+export default Consulting;
