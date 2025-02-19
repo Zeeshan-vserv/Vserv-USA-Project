@@ -8,9 +8,9 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
     <div>
-      <div className='flex flex-row items-center justify-between  w-full bg-[#1B0056] text-white p-4  gap-60'>
+      <div className='flex flex-row items-center justify-between  w-full bg-[#1B0056] text-white p-4 max-md:flex-col max-md:gap-5'>
         <span className='flex items-center font-bold'><LiaCopyright />2025 VSERV Infosystems INC</span>
-        <div className='flex gap-10'>
+        <div className='flex gap-5'>
         <span className='font-bold'>Services</span>
         <span className='font-bold'>Privacy</span>
         </div>

@@ -14,7 +14,7 @@ const contact = () => {
 
     return (
       <Select
-        className="w-139.5 border-none"
+        className="w-139.5 border-none max-sm:w-[100%]"
         placeholder="Country"
         options={options}
         value={value}
@@ -26,46 +26,46 @@ const contact = () => {
   return (
     <div>
       {/* <img className='w-full h-150' src={contactus} alt="" /> */}
-      <div className='font-medium text-3xl items-center text-center p-3 m-2'>
+      <div className='font-medium text-3xl items-center text-center p-3  max-md:text-xl'>
         <p>Let’s build the future together!</p>
         <p> Reach out to us </p>
          <p> for custom IT solutions, consultation, or partnership opportunities.</p>
       </div>
-      <div className="text-4xl font-medium items-center text-center p-10">
+      <div className="text-4xl font-medium items-center text-center p-10 max-md:text-2xl max-md:p-0">
         <h1>How can we help you?</h1>
       </div>
       <div className="flex justify-center items-center p-5">
-        <form action="" className="flex flex-col items-center">
+        <form action="" className="flex flex-col items-center w-140 max-sm:w-[90%]">
           <input
-            className="border-1 rounded-md p-2 mb-4 w-140"
+            className="border-1 rounded-md p-2 mb-4 w-full"
             type="text"
             placeholder="First Name"
           />
           <input
-            className="border-1 rounded-md p-2 mb-4 w-140"
+            className="border-1 rounded-md p-2 mb-4 w-full"
             type="text"
             placeholder="Last Name"
           />
           <input
-            className="border-1 rounded-md p-2 mb-4 w-140"
+            className="border-1 rounded-md p-2 mb-4 w-full"
             type="text"
             placeholder="Work Email"
           />
           <input
-            className="border-1 rounded-md p-2 mb-4 w-140"
+            className="border-1 rounded-md p-2 mb-4 w-full"
             type="text"
             placeholder="Job Title"
           />
           <input
-            className="border-1 rounded-md p-2 mb-4 w-140"
+            className="border-1 rounded-md p-2 mb-4 w-full"
             type="text"
             placeholder="Company"
           />
-          <div className="border-1 rounded-md mb-4 w-140">
+          <div className="border-1 rounded-md mb-4 w-full">
             <CountrySelector />
           </div>
           <textarea
-            className="border-1 rounded-md p-2 mb-4 w-140"
+            className="border-1 rounded-md p-2 mb-4 w-full"
             type="text"
             placeholder="Message"
           ></textarea>
