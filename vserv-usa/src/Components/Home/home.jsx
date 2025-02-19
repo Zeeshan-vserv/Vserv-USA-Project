@@ -12,9 +12,16 @@ import { FiFigma } from "react-icons/fi";
 import { LuRadioTower } from "react-icons/lu";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
 import cio from '../../images/cio.webp'
-import ai from '../../images/ai.jpg'
-import software from '../../images/software.jpg'
-import software2 from '../../images/software2.jpg'
+import ai from '../../images/ai.webp'
+import software from '../../images/software.webp'
+import software2 from '../../images/software2.webp'
+import software3 from '../../images/software3.webp'
+import web from '../../images/web.webp'
+import js from '../../images/js.webp'
+import app from '../../images/app.webp'
+import devops from '../../images/devops.webp'
+import uiux from '../../images/uiux.webp'
+import iot from '../../images/iot.webp'
 import Nav from "../Navbar/Nav";
 
 const Home = () => {
@@ -88,16 +95,16 @@ const Home = () => {
           <div className="w-[50%]">
             <img
               className="w-full h-[450px] object-cover"
-              src={cio}
+              src={software3}
               alt=""
             />
           </div>
           <div className="w-[50%] flex flex-col gap-4 justify-center pl-32 pr-28 text-[#341C55]">
-            <h2 className="text-4xl leading-10 cursor-pointer duration-500 ease-in-out hover:underline"><a href="https://vservit.com/vservit-wins-the-cio-choice-2025-it-service-vendor-award-a-testament-to-excellence-and-innovation/" target="_blank">
-             VSERV Infosystems Wins the CIO Choice 2025 IT Service Vendor Award</a>
+            <h2 className="text-4xl leading-10 cursor-pointer duration-500 ease-in-out hover:underline">
+            "Future-Proof Your Business with Custom Software Development
             </h2>
             <p className="text-sm">
-            At VSERV Infosystems, we are proud to announce that we have been recognized as the CIO Choice 2025 IT Service Vendor. This prestigious accolade is a remarkable achievement, underscoring our commitment to delivering top-tier IT services and solutions that empower businesses across various industries to achieve their digital transformation goals.
+            In today's fast-paced digital landscape, off-the-shelf solutions often fall short of meeting unique business needs. Custom software development is the key to enhancing efficiency, scalability, and innovation. At Vserv IT, we craft tailor-made software solutions designed to align perfectly with your business objectives, ensuring long-term success.
             </p>
           </div>
         </div>
@@ -151,25 +158,25 @@ const Home = () => {
         <div className="w-full flex flex-wrap bg-[#7470A6] text-white">
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-            Your Partner in Comprehensive Cybersecurity Solutions
+            We specialize in custom web development with modern frameworks and CMS platforms
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://vservit.com/wp-content/uploads/2024/11/Cyber-Security.jpg"
+              src={web}
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-            Comprehensive IT Infrastructure Management for Modern Businesses
+            Build high-performance web applications with modern JavaScript frameworks.
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://vservit.com/wp-content/uploads/2024/11/Infrastructure-Managed-Services.jpg"
+              src={js}
               alt=""
             />
           </div>
@@ -177,49 +184,49 @@ const Home = () => {
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://vservit.com/wp-content/uploads/2024/11/Cloud-Solutions.jpg"
+              src={app}
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-            Empowering Businesses with Cloud and AI
+            We develop feature-rich, scalable, and secure mobile applications for iOS, Android, and cross-platform environments
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://vservit.com/wp-content/uploads/2024/10/fms1.jpg"
+              src={devops}
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-            Comprehensive Facility Management Services for a Seamless Business Environment
+            Enhance CI/CD pipelines, cloud adoption, and infrastructure automation with our DevOps expertise
             </h3>
           </div>
 
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-            Artificial Intelligence and Machine Learning Services
+            Create user-centric designs with our prototyping and UI/UX design services
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://vservit.com/wp-content/uploads/2024/11/ML-Solutions.jpg"
+              src={uiux}
               alt=""
             />
           </div>
           <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw]">
             <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-              Empowering Businesses with People-First Workforce Solutions
+            Leverage IoT-enabled solutions to create smart, connected ecosystems
             </h3>
           </div>
           <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden">
             <img
               className="w-full h-full object-cover duration-600 ease-in-out hover:scale-110"
-              src="https://vservit.com/wp-content/uploads/2024/11/Staffing-Solutions.jpg"
+              src={iot}
               alt=""
             />
           </div>
@@ -303,7 +310,7 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="group relative bg-[url('https://plus.unsplash.com/premium_photo-1661288439917-1542b58a962b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover md:w-[50%] w-full h-[500px] flex flex-col gap-4 items-center justify-center text-white">
+          <div className="group relative bg-[url('https://img.freepik.com/free-photo/development-with-abstract-background_1134-414.jpg?t=st=1739942480~exp=1739946080~hmac=216a95da3420701276accbc210f718b1aebc054bd1d66a970ae4ec413d51ba00&w=1060')] bg-center bg-cover md:w-[50%] w-full h-[500px] flex flex-col gap-4 items-center justify-center text-white">
             <div className="absolute inset-0 bg-black/50"></div>
             {/* Dark Overlay */}
             <h2 className="text-5xl font-bold text-center mt-72 w-[60%] relative z-10 group-hover:mt-0 duration-700">
@@ -324,8 +331,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <Contact />
       <Footer/>
     </div>
   );

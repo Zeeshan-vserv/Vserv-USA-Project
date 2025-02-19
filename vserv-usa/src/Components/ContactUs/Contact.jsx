@@ -1,27 +1,58 @@
-import React, { useState, useMemo } from 'react'
-import Select from 'react-select'
-import countryList from 'react-select-country-list'
-import contactus from '../../images/contactus.jpg'
+import React, { useState, useMemo } from "react";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 
-const contact = () => {
-  function CountrySelector() {
-    const [value, setValue] = useState("");
-    const options = useMemo(() => countryList().getData(), []);
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    jobTitle: "",
+    company: "",
+    country: "",
+    message: "",
+  });
 
-    const changeHandler = (value) => {
-      setValue(value);
-    };
+  const [responseMessage, setResponseMessage] = useState("");
 
-    return (
-      <Select
-        className="w-139.5 border-none"
-        placeholder="Country"
-        options={options}
-        value={value}
-        onChange={changeHandler}
-      />
-    );
-  }
+  const options = useMemo(() => countryList().getData(), []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleCountryChange = (selectedOption) => {
+    setFormData({ ...formData, country: selectedOption.label });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost/contact.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      setResponseMessage(result.message);
+
+      if (result.status === "success") {
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          jobTitle: "",
+          company: "",
+          country: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      setResponseMessage("Error submitting form.");
+    }
+  };
 
   return (
     <div>
@@ -35,43 +66,67 @@ const contact = () => {
         <h1>How can we help you?</h1>
       </div>
       <div className="flex justify-center items-center p-5">
-        <form action="" className="flex flex-col items-center">
+        <form action="" className="flex flex-col items-center" onSubmit={handleSubmit}>
           <input
             className="border-1 rounded-md p-2 mb-4 w-140"
             type="text"
+            name="firstName"
+            value={formData.firstName} 
+            onChange={handleChange}
             placeholder="First Name"
+            required
           />
           <input
             className="border-1 rounded-md p-2 mb-4 w-140"
             type="text"
+            name="lastName"
+            value={formData.lastName} 
+            onChange={handleChange}
             placeholder="Last Name"
+            required
           />
           <input
             className="border-1 rounded-md p-2 mb-4 w-140"
             type="text"
+            name="email"
+            value={formData.email} 
+            onChange={handleChange}
             placeholder="Work Email"
+            required
           />
           <input
             className="border-1 rounded-md p-2 mb-4 w-140"
             type="text"
+            name="jobTitle"
+            value={formData.jobTitle} 
+            onChange={handleChange}
             placeholder="Job Title"
+            required
           />
           <input
             className="border-1 rounded-md p-2 mb-4 w-140"
             type="text"
+            name="company"
+            value={formData.company} 
+            onChange={handleChange}
             placeholder="Company"
+            required
           />
-          <div className="border-1 rounded-md mb-4 w-140">
-            <CountrySelector />
-          </div>
+          <div className="border rounded-md mb-4 w-140">
+          <Select options={options} value={options.find((option) => option.label === formData.country)} onChange={handleCountryChange} placeholder="Country" />
+        </div>
           <textarea
             className="border-1 rounded-md p-2 mb-4 w-140"
             type="text"
+            name="message"
+            value={formData.message} 
+            onChange={handleChange}
             placeholder="Message"
+            required
           ></textarea>
           <div className="flex items-center mb-4">
             <input type="checkbox" id="terms" />
-            <label className="m-2 font-light text-[12px]" for="terms">
+            <label className="m-2 font-light text-[12px]" for="terms" required>
               I confirm, I have read and agree to{" "}
               <a className="cursor-pointer font-semibold underline" href="">
                 VSERV's Privacy Policy
@@ -83,9 +138,10 @@ const contact = () => {
             Submit
           </button>
         </form>
+        {responseMessage && <p className="text-center mt-3">{responseMessage}</p>}
       </div>
     </div>
   );
 };
 
-export default contact;
+export default Contact;
