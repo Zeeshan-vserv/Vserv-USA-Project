@@ -1,13 +1,23 @@
 import React from "react";
+import backendDev from "../../Components/images/services/StaffAugmentation/backendDev.avif";
+import frontendDev from "../../Components/images/services/StaffAugmentation/frontendDev.avif";
+import devopsCloud from "../../Components/images/services/StaffAugmentation/devopsCloud.avif";
+import mobileAppDev from "../../Components/images/services/StaffAugmentation/mobileAppDev.avif";
+import QualityAssurance from "../../Components/images/services/StaffAugmentation/QualityAssurance.avif";
+import javaScript from "../../Components/images/services/StaffAugmentation/javaScript.avif";
+import webDev from "../../Components/images/services/StaffAugmentation/webDev.avif";
+import enterpriseSolutions from "../../Components/images/services/StaffAugmentation/enterpriseSolutions.avif";
+import cms from "../../Components/images/services/StaffAugmentation/cms.avif";
+import operationsProjectManagement from "../../Components/images/services/StaffAugmentation/operationsProjectManagement.avif";
 
 const StaffAugmentation = () => {
   return (
     <section className="bg-gray-100 py-12 px-6 md:px-12">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6">
           What We Do
         </h2>
-        <p className="text-gray-600 text-lg mb-6">
+        <p className="text-gray-600 text-base mb-6">
           At <strong>Vserv Infosystems INC</strong>, we specialize in delivering
           top-tier IT solutions that empower businesses to achieve digital
           excellence. With expertise in{" "}
@@ -17,13 +27,13 @@ const StaffAugmentation = () => {
           </strong>
           , we provide cutting-edge solutions tailored to your business needs.
         </p>
-        <p className="text-gray-600 text-lg mb-12">
+        <p className="text-gray-600 text-base mb-12">
           With a team of highly skilled professionals, we focus on{" "}
           <strong>scalability, innovation, and efficiency</strong>, ensuring
           that your organization stays ahead in today’s competitive digital
           landscape.
         </p>
-        <h2 className="text-3xl font-semibold text-gray-800 mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-8">
           Our Services
         </h2>
         <h3 className="text-2xl font-semibold text-gray-700 mb-6 text-start">
@@ -38,9 +48,15 @@ const StaffAugmentation = () => {
           </strong>{" "}
           {""}across various domains, allowing businesses to scale effortlessly.
         </p>
-        <div className="grid md:grid-cols-2 gap-8 text-left">
+
+        <div className="grid md:grid-cols-3 gap-8 text-left">
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={backendDev}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Back-End Development
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -70,7 +86,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={frontendDev}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Front-End Development
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -97,7 +118,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={devopsCloud}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               DevOps & Cloud Solutions
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -127,7 +153,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={mobileAppDev}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Mobile Development
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -154,7 +185,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={QualityAssurance}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Quality Assurance (QA)
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -172,7 +208,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={javaScript}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               JavaScript Development
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -198,7 +239,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={webDev}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Web Development
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -220,7 +266,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={enterpriseSolutions}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Enterprise Solutions
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -250,7 +301,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+            <img
+              src={cms}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Content Management Systems (CMS)
             </h3>
             <p className="text-gray-600 text-base mb-4">
@@ -280,7 +336,12 @@ const StaffAugmentation = () => {
             </ul>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+          <img
+              src={operationsProjectManagement}
+              alt="Back-End Development"
+              className="w-full h-auto object-cover rounded-md"
+            />
+            <h3 className="text-xl font-semibold text-gray-700 mb-4 mt-2">
               Operations & Project Management
             </h3>
             <p className="text-gray-600 text-base mb-4">

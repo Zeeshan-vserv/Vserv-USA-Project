@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import logo from "../../images/logo.png";
+// import logo from "../../images/logo.png";
+import logo from "../../Components/images/Logo.png";
 import { TfiWorld } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
+import GoogleTranslate from "../Translate/GoogleTranslate";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -90,7 +92,7 @@ function Nav() {
               </Link>
             </ul>
           </Link>
-          <span className="font-normal hover:translate-y-[-3px] ease-in-out duration-200">What We Think</span>
+          <Link to="/what-we-think" className="font-normal hover:translate-y-[-3px] ease-in-out duration-200">What We Think</Link>
           <a href="https://vservit.com/about-us/" target="_blank">
             <span className="flex justify-center items-center gap-1 group font-normal hover:translate-y-[-3px] ease-in-out duration-200">
               About VSERV
@@ -118,6 +120,7 @@ function Nav() {
         </div>
         <div className=" hidden md:block m-3 text-2xl p-3">
           <TfiWorld />
+          {/* <GoogleTranslate /> */}
         </div>
       </div>
       {/* mobile view */}
@@ -210,6 +213,7 @@ function Nav() {
           </Link>
           <div className="flex justify-center p-2 text-2xl cursor-pointer">
             <TfiWorld />
+            {/* <GoogleTranslate /> */}
           </div>
         </div>
       )}

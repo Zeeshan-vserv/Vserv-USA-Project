@@ -14,8 +14,7 @@ function Footer() {
           2025 VSERV Infosystems INC
         </span>
         <div className="flex gap-5">
-          <span className="font-bold">Services</span>
-          <span className="font-bold">Privacy</span>
+          <p className="font-semibold text-xm">Address: 1818 Library Street, Suite 500,  Reston, Virginia 20190, United States </p>
         </div>
         <div className="flex  gap-5 text-xl">
           <a href="https://www.facebook.com/vservit" target="_blank">

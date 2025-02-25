@@ -1,66 +1,51 @@
 import React, { useState } from "react";
 import Contact from "../ContactUs/Contact";
-import Footer from "../Footer/Footer";
-import { FaCirclePlay } from "react-icons/fa6";
-import VideoPopup from "./VideoPopup";
-import HomeVideo from "../../assets/home-vid-1.mp4";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { FaDigitalOcean, FaProductHunt, FaTools } from "react-icons/fa";
 import { ImAmazon } from "react-icons/im";
 import { FiFigma } from "react-icons/fi";
 import { LuRadioTower } from "react-icons/lu";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
-import cio from "../../images/cio.webp";
-import ai from "../../images/ai.jpg";
-import software from "../../images/software.jpg";
-import software2 from "../../images/software2.jpg";
-import software3 from "../../images/software3.avif";
-import experties from "../../images/experties.avif";
-import web from "../../images/web.avif";
-import js from "../../images/js.avif";
-import app from "../../images/app.avif";
-import devops from "../../images/devops.avif";
-import uiux from "../../images/uiux.avif";
-import iot from "../../images/iot.avif";
-import Nav from "../Navbar/Nav";
+import ai from "../../Components/images/ai.jpg";
+import software from "../../Components/images/software.jpg";
+import software2 from "../../Components/images/software2.jpg";
+import software3 from "../../Components/images/software3.avif";
+import experties from "../../Components/images/experties.avif";
+import web from "../../Components/images/web.avif";
+import js from "../../Components/images/js.avif";
+import app from "../../Components/images/app.avif";
+import devops from "../../Components/images/devops.avif";
+import uiux from "../../Components/images/uiux.avif";
+import iot from "../../Components/images/iot.avif";
+import v4 from "../../Components/images/v4.mp4";
+import { Link } from "react-router-dom";
+import "./home.css";
 
 const Home = () => {
   const [playVid, setPlayVid] = useState(false);
   return (
     <div className="max-w-screen overflow-x-hidden">
-      {/* Home Case Study Section */}
-      <div className={`absolute z-50 ${!playVid ? "hidden" : ""}`}>
-        <VideoPopup HomeVideo={HomeVideo} setPlayVid={setPlayVid} />
+    <section>
+  <div className="relative w-full h-[700px] bg-[#111111] flex text-white max-lg:flex-col gap-4 max-lg:p-8">
+    <video
+      className="absolute top-0 left-0 w-full h-full object-cover fade-in-video"
+      autoPlay
+      loop
+      muted
+      src={v4}
+    ></video>
+    <div className="relative z-10 w-full h-full flex flex-col gap-4 items-end  justify-center  text-white bg-black/50">
+      <h1 className="text-5xl font-bold fade-in-up mr-5">VSERV Infosystems INC</h1>
+      <div className="text-[29px] fade-in-up w-120 mr-7" style={{ animationDelay: "0.3s" }}>
+      <p className="items-center justify-center font-semibold flex gap-2">
+        Engineering Digital Excellence -  
+      </p>
+      <p className="items-center justify-center font-semibold flex gap-2" >Because Ordinary is Not an Option!</p>
       </div>
-      <section>
-        <div className="w-full bg-[#111111] flex text-white p-20 max-lg:flex-col gap-4 max-lg:p-8">
-          <div className="w-[50%] flex flex-col gap-5 max-lg:w-[100%] max-lg:items-center">
-            <h2 className="text-5xl font-semibold w-[80%] max-lg:text-center max-lg:w-[100%] max-lg:text-3xl">
-              Vserv Infosystems Wins CIO Choice Award 2025 for Excellence in IT
-              Solutions
-            </h2>
-            <p className="w-[60%] max-lg:w-[100%] max-lg:text-center">
-              Vserv Infosystem, a leader in IT solutions and digital
-              transformation, has been recognized with the prestigious CIO
-              Choice Award 2025 for delivering cutting-edge technology solutions
-              that drive business success. This recognition underscores our
-              commitment to empowering organizations with real-time customer
-              insights, advanced analytics, and AI-driven decision-making.
-            </p>
-          </div>
-          <div className="w-[50%] max-lg:w-[100%]">
-            <div className="h-[400px] w-[600px] m-auto relative max-lg:w-[100%] max-lg:h-[60vw]">
-              <img className="h-full w-full" src={cio} alt="" />
-              <span className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <FaCirclePlay
-                  className="text-6xl text-[#2B0060] bg-white rounded-full cursor-pointer"
-                  onClick={() => setPlayVid(true)}
-                />
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
+
 
       {/* Home second Section */}
       <section className="bg-[#362358] w-full px-10 pt-7 pb-4 max-lg:px-5">
@@ -251,8 +236,8 @@ const Home = () => {
             </div>
             <div className="cards flex items-center justify-center p-10 w-[25%] h-[25vw] max-lg:w-[100%] max-lg:h-full">
               <h3 className="text-2xl font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Leverage IoT-enabled solutions to create smart,
-                connected ecosystems
+                Leverage IoT-enabled solutions to create smart, connected
+                ecosystems
               </h3>
             </div>
             <div className="cards flex items-center justify-center w-[25%] h-[25vw] bg-red-500 overflow-hidden max-lg:w-[90%] max-lg:h-full">
@@ -274,50 +259,55 @@ const Home = () => {
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <HiMiniUserGroup className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Staff Augmentation
+                <Link to="/staffAugmentation">Staff Augmentation</Link>
               </h3>
-              <p></p>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <FaTools className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                IT Support & Managed Services
+                <Link to="/it-support-management-service">
+                  IT Support & Managed Services
+                </Link>
               </h3>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <ImAmazon className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                E-Commerce Solutions
+                <Link to="/e-commerce-solution">E-Commerce Solutions</Link>
               </h3>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <FiFigma className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Prototyping & UI/UX Design
+                <Link to="/prototyping-ui-design">
+                  Prototyping & UI/UX Design
+                </Link>
               </h3>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <FaDigitalOcean className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Enterprise Digital Transformation
+                <Link to="/enterprise-digital-transformation">
+                  Enterprise Digital Transformation
+                </Link>
               </h3>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <FaProductHunt className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Product Engineering
+                <Link to="/product-engineering">Product Engineering</Link>
               </h3>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <LuRadioTower className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Internet of Things (IoT)
+                <Link to="/internet-Of-things">Internet of Things (IoT)</Link>
               </h3>
             </div>
             <div className="card w-[20%] h-[20vw] min-w-[195px] min-h-[195px] p-5 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-gray-300 shadow-2xl hover:scale-105 ease-in-out duration-300">
               <MdOutlineAppSettingsAlt className="text-5xl text-[#61AFC4]" />
               <h3 className="text-xl text-[#1B0056] text-center font-semibold cursor-pointer duration-500 ease-in-out hover:underline">
-                Mobile App Development
+                <Link to="/mobile-app-development">Mobile App Development</Link>
               </h3>
             </div>
           </div>

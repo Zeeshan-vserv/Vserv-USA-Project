@@ -1,27 +1,11 @@
 import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import CorporateVedio4 from "../../Components/images/CorporateVedio4.mp4";
+
 
 const Contact = () => {
-
-  function CountrySelector() {
-    const [value, setValue] = useState("");
-    const options = useMemo(() => countryList().getData(), []);
-
-    const changeHandler = (value) => {
-      setValue(value);
-    };
-
-    return (
-      <Select
-        className="w-139.5 border-none max-sm:w-[100%]"
-        placeholder="Country"
-        options={options}
-        value={value}
-        onChange={changeHandler}
-   />
-);
-}
+    const [playVid, setPlayVid] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -47,19 +31,19 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
-      const response = await fetch("http://vservusa.vservit.com/contact.php", {
+      const response = await fetch("https://vservusa.vservit.com/contact.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-  
+
       const result = await response.json();
-      setResponseMessage(result.message);
-  
+      setResponseMessage(result.message || "Message sent successfully");
+
       if (result.status === "success") {
-        setShowPopup(true); // Show the popup message
+        setShowPopup(true);
         setFormData({
           firstName: "",
           lastName: "",
@@ -69,28 +53,38 @@ const Contact = () => {
           country: "",
           message: "",
         });
-  
-        // Hide the popup after 3 seconds (optional)
-        setTimeout(() => {
-          setShowPopup(false);
-        }, 3000);
+
+        setTimeout(() => setShowPopup(false), 3000);
+      } else {
+        setShowPopup(true);
       }
     } catch (error) {
       setResponseMessage("Error submitting form.");
-      setShowPopup(true); // Show popup on error as well
+      setShowPopup(true);
     }
   };
-  
 
   return (
     <div>
       {/* <img className='w-full h-150' src={contactus} alt="" /> */}
-      <div className='font-medium text-3xl items-center text-center p-3  max-md:text-xl'>
+      <section>
+        <div className="relative w-full h-[850px] bg-[#111111] flex text-white max-lg:flex-col gap-4 max-lg:p-8">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover fade-in-video"
+            autoPlay
+            loop
+            muted
+            src={CorporateVedio4}
+          ></video>
+          
+        </div>
+      </section>
+      <div className='font-medium text-3xl items-center text-center p-3 m-2  max-md:text-xl'>
         <p>Let’s build the future together!</p>
         <p> Reach out to us </p>
          <p> for custom IT solutions, consultation, or partnership opportunities.</p>
       </div>
-      <div className="text-4xl font-medium items-center text-center p-10 max-md:text-2xl max-md:p-0">
+      <div className="text-4xl font-medium items-center text-center p-5 max-md:text-2xl max-md:p-0">
         <h1>How can we help you?</h1>
       </div>
       <div className="flex justify-center items-center p-5">
@@ -140,7 +134,7 @@ const Contact = () => {
             placeholder="Company"
             required
           />
-          <div className="border rounded mb-4 w-full">
+          <div className="border-1 rounded mb-4 w-full">
             <Select
               placeholder="Country"
               options={options}
