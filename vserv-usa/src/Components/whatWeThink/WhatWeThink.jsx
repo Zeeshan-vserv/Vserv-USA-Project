@@ -42,7 +42,7 @@ const WhatWeThink = () => {
   return (
     <div>
       <section>
-        <div className="relative w-full h-[700px] bg-[#111111] flex text-white max-lg:flex-col gap-4 max-lg:p-8">
+        <div className="relative w-full h-[850px] bg-[#111111] flex text-white max-lg:flex-col gap-4 max-lg:p-8">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover fade-in-video"
             autoPlay

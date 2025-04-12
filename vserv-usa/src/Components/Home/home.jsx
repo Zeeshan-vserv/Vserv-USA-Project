@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div className="max-w-screen overflow-x-hidden">
     <section>
-  <div className="relative w-full h-[700px] bg-[#111111] flex text-white max-lg:flex-col gap-4 max-lg:p-8">
+  <div className="relative w-full h-[850px] bg-[#111111] flex text-white max-lg:flex-col gap-4 max-lg:h-[550px] max-md:h-[400px] max-sm:h-[230px]">
     <video
       className="absolute top-0 left-0 w-full h-full object-cover fade-in-video"
       autoPlay
@@ -34,13 +34,13 @@ const Home = () => {
       muted
       src={v4}
     ></video>
-    <div className="relative z-10 w-full h-full flex flex-col gap-4 items-end  justify-center  text-white bg-black/50">
-      <h1 className="text-5xl font-bold fade-in-up mr-5">VSERV Infosystems INC</h1>
-      <div className="text-[29px] fade-in-up w-120 mr-7" style={{ animationDelay: "0.3s" }}>
+    <div className="relative z-10 w-full h-full flex flex-col gap-4 items-end  justify-center  text-white bg-black/50 max-lg:items-center">
+      <h1 className="text-5xl font-bold fade-in-up mr-5 max-lg:text-center max-lg:text-xl">VSERV Infosystems INC</h1>
+      <div className="text-[29px] fade-in-up w-120 mr-7 max-lg:text-center max-lg:text-xl" style={{ animationDelay: "0.3s" }}>
       <p className="items-center justify-center font-semibold flex gap-2">
         Engineering Digital Excellence -  
       </p>
-      <p className="items-center justify-center font-semibold flex gap-2" >Because Ordinary is Not an Option!</p>
+      <p className="items-center justify-center font-semibold flex gap-2 max-lg:text-center" >Because Ordinary is Not an Option!</p>
       </div>
     </div>
   </div>
